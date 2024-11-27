@@ -26,7 +26,7 @@ import PrPublication from "../screens/PrPublication";
 
 const Router = () => {
   return (
-    <BrowserRouter basename="BookWriting">
+    <BrowserRouter basename="bookwriting">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ghost-writer" element={<GhostWriter />} />
