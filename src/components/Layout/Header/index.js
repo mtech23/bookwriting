@@ -53,7 +53,12 @@ const Header = () => {
 
 
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
-              <div className="container-fluid">
+              <div className="container-fluid align-items-cennter">
+
+                <ul className="topbar_number">
+                  <li><a href="tal:13322826702">13322826702</a></li>
+                </ul>
+
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
@@ -142,9 +147,13 @@ const Header = () => {
                     </Link>
 
                     <DropdownButton id="dropdown-basic-button" className="navbar-more-btn" title="More">
-                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                      <Dropdown.Item href="#/action-1">Resume Writing</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Author Website</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Book Marketing</Dropdown.Item>
+                      <Dropdown.Item href="#/action-4">Book Cover Design</Dropdown.Item>
+                      <Dropdown.Item href="#/action-5">Custom Book Illustration</Dropdown.Item>
+                      <Dropdown.Item href="#/action-6">Professional Audio Book</Dropdown.Item>
+                      <Dropdown.Item href="#/action-7">Proofreading</Dropdown.Item>
                     </DropdownButton>
 
 

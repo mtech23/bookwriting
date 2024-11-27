@@ -110,7 +110,7 @@ const tabs = [
   },
   {
     id: "lorem-ipsum",
-    title: "Lorem Ipsum 1",
+    title: "Book Marketing",
     icon: helpingIcon05,
     content:
       "Lorem Ipsum is a type of placeholder text used in the publishing and design industries. It helps designers visualize how the final text will look in a layout before the actual content is available. The text is derived from sections of Latin literature and has been used since the 1960s.",
