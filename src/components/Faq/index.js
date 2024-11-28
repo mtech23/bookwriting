@@ -18,8 +18,8 @@ const Faq = () => {
                   data-aos-offset="0"
                   data-aos-duration="2000"
                 >
-                  FREQUENTLY
-                  <span class="color-red">ASKED QUESTIONS</span>
+                  FREQUENTLY 
+                  <span class="color-red"> ASKED QUESTIONS</span>
                 </h2>
               </div>
             </div>
