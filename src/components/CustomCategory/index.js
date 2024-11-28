@@ -10,6 +10,14 @@ import {
   categoryIcon05,
   ImgUnderArc,
   polygon01,
+
+
+  fictionImg,
+  actionImg,
+  commicImg,
+  childrenImg,
+  romanceImg,
+
 } from "../../asserts/images";
 
 const categories = [
@@ -19,7 +27,8 @@ const categories = [
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     icon: categoryIcon01,
     className: "first_category",
-    image: A4book,
+    // image: A4book,
+    image: fictionImg,
   },
   {
     id: "children",
@@ -27,7 +36,8 @@ const categories = [
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     icon: categoryIcon02,
     className: "second_category",
-    image: A4book1,
+    // image: A4book1,
+    image: childrenImg,
   },
   {
     id: "comic",
@@ -35,7 +45,8 @@ const categories = [
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     icon: categoryIcon03,
     className: "third_category",
-    image: A4book,
+    // image: A4book,
+    image: commicImg,
   },
   {
     id: "action",
@@ -43,7 +54,8 @@ const categories = [
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     icon: categoryIcon04,
     className: "forth_category",
-    image: A4book1,
+    // image: A4book1,
+    image: actionImg,
   },
   {
     id: "romance",
@@ -51,7 +63,8 @@ const categories = [
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     icon: categoryIcon05,
     className: "fifth_category",
-    image: A4book,
+    // image: A4book,
+    image: romanceImg,
   },
 ];
 

@@ -98,6 +98,12 @@ import amazonPrintingImg2 from "./amazonPrintingImg2.png";
 import bookReviewImg2 from "./bookReviewImg2.png";
 import prPublicationImg2 from "./prPublicationImg2.png";
 
+import fictionImg from "./fictionImg.jpg";
+import actionImg from "./actionImg.jpg";
+import commicImg from "./commicImg.jpg";
+import childrenImg from "./childrenImg.jpg";
+import romanceImg from "./romanceImg.jpg";
+
 import testVideo1 from "./testimonial-video1.mp4";
 
 import testPlayIcon from "./test_play-icon.png";
@@ -200,5 +206,12 @@ export {
   eBookSEOImg2,
   amazonPrintingImg2,
   bookReviewImg2,
-  prPublicationImg2
+  prPublicationImg2,
+
+
+  fictionImg,
+  actionImg,
+  commicImg,
+  childrenImg,
+  romanceImg,
 };

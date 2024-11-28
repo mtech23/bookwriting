@@ -336,7 +336,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="copyright">
-                  <p>Copyright © 2024. All Rights Reserved</p>
+                  <p>© Falcon Book Writers . All Rights Reserved, Falcon Book Writing.</p>
                 </div>
               </div>
               <div className="col-md-6">

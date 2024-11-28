@@ -15,7 +15,6 @@ import ChildrenBookPrinting from "../screens/ChildrenBookPrinting";
 import WebsiteAuthor from "../screens/WebsiteAuthor";
 import CommicIllustration from "../screens/CommicIllustration";
 
-
 import BookFormatting from "../screens/BookFormatting";
 import ProofReading from "../screens/ProofReading";
 import SocialMediaMarketing from "../screens/SocialMediaMarketing";
@@ -26,7 +25,7 @@ import PrPublication from "../screens/PrPublication";
 
 const Router = () => {
   return (
-    <BrowserRouter basename="BookWriting">
+    <BrowserRouter basename="bookwriting">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ghost-writer" element={<GhostWriter />} />
