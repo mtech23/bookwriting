@@ -1,5 +1,6 @@
 import  { useEffect } from "react";
 import './App.css';
+import 'swiper/css';
 import Router from './router';
 import AOS from "aos";
 import "aos/dist/aos.css";

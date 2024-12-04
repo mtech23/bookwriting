@@ -15,6 +15,9 @@ import {
   testVideo1,
   testPlayIcon,
 } from "../../asserts/images";
+import {
+  helenMark, davidParker, lisaPatterson, michaelClarke, jessicaWilliams, brianSmith, amandaWhite
+} from "../../asserts/videos";
 import "./style.css";
 
 import gsap from "gsap";
@@ -25,50 +28,67 @@ gsap.registerPlugin(MotionPathPlugin);
 const testimonials_data = [
   {
     id: 1,
-    image: testImg1,
+    image: testImg2,
     Icon: testPlayIcon,
+    name: "Brian Smith",
+    description: `Falcon Book Writing helped me from editing to publication. Their team made it really easy. Since I have no experience with publishing a book, I had fears that the complexity of the book publishing industry was going to overwhelm me. But Falcon Book Writing led me step by step through this process. Their professional team has been working together with me on every question that I may have. My book is polished by them to perfection. And finally, the, result was amazing, and I couldn't have done it without them.`,
+    video: brianSmith
   },
   {
     id: 2,
-    image: testImg2,
-
+    image: testImg4,
     Icon: testPlayIcon,
+    name: "Helen Mark",
+    description: `I was quite nervous about self-publishing, but Falcon Book Writing took me through every single step of the way. The consultancy service was just so useful to me. They made me understand what it means to self-publish, and everything that I had to do was explained. I just felt completely supported throughout all the process - formatting and design, getting the book out there in the channels. However, now my book is live and live on all major platforms, and I just couldn't be more excited.`,
+    video: helenMark
   },
   {
     id: 3,
-    image: testImg3,
-
+    image: testImg5,
     Icon: testPlayIcon,
+    name: "David Parker",
+    description: `I really needed help with marketing and branding my book, as it really is the only way to speak directly to your target market. Thanks to their wisdom, I really saw some growth in sales and visibility around my book. I totally cannot recommend them enough!`,
+    video: davidParker
   },
   {
     id: 4,
-    image: testImg4,
-
+    image: testImg3,
     Icon: testPlayIcon,
+    name: "Lisa Patterson",
+    description: `The ghostwriting service at Falcon Book Writing was great. I had a concept for a book but did not know how to flesh it out into a full-length manuscript. Their book writing service took my ideas and shaped them into a coherent, interesting narrative. They managed to grasp my voice so well and made the final product come out just like what I wanted it to be; they seemed to be putting down my thoughts and dreams on paper.`,
+    video: lisaPatterson
   },
   {
     id: 5,
-    image: testImg5,
-
+    image: testImg7,
     Icon: testPlayIcon,
+    name: "Michael Clarke",
+    description: `I highly recommend their services to any author who wants a high-quality product.`,
+    video: michaelClarke
   },
   {
     id: 6,
-    image: testImg6,
-
+    image: testImg3,
     Icon: testPlayIcon,
+    name: "Jessica Williams",
+    description: `I hired the services of Falcon Book Writing for proofreading and editing, and I am thoroughly impressed by their attention to detail. My manuscript was in pretty good shape, but the team helped polish it to perfection. I wouldn't trust anyone else with my manuscript!`,
+    video: jessicaWilliams
   },
   {
     id: 7,
-    image: testImg7,
-
+    image: testImg8,
     Icon: testPlayIcon,
+    name: "Brian Smith",
+    description: `Coming from a first-time author, I had many questions and doubts, especially with regards to the publishing process. It was a big help to consult with Falcon Book Writing. They made everything very clear to me, starting from manuscript format to getting my book published.`,
+    video: brianSmith
   },
   {
     id: 8,
-    image: testImg8,
-
+    image: testImg4,
     Icon: testPlayIcon,
+    name: "Amanda White",
+    description: `I avail their book writing service which did a great job in making my business book outstanding.`,
+    video: amandaWhite
   },
 ];
 
@@ -172,7 +192,7 @@ const Testimonial = () => {
                       type="button"
                       className="box"
                       key={index}
-                      onClick={() => setLgShow(true)}
+                      onClick={() => setLgShow(item.video)}
                     >
                       <img src={item.image} alt="" />
                       <img
@@ -317,7 +337,7 @@ const Testimonial = () => {
             X
           </button>
           <video autoPlay loop width="100%">
-            <source src={testVideo1} type="video/mp4" />{" "}
+            <source src={lgShow} type="video/mp4" />{" "}
             {/* Replace with your video path */}
             Your browser does not support the video tag.
           </video>

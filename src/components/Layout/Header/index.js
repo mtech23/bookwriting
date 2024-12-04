@@ -12,6 +12,8 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import "./style.css";
 
 import { logo } from "../../../asserts/images";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -54,9 +56,11 @@ const Header = () => {
 
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
               <div className="container-fluid align-items-cennter">
-
                 <ul className="topbar_number">
-                  <li><a href="tal:13322826702">13322826702</a></li>
+                  <li><a href="tel:(855) 288-8770" className="text-with-icon">
+                  <FontAwesomeIcon icon={faPhone} style={{ color: '#fff' }} />
+                    (855) 288-8770
+                    </a></li>
                 </ul>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,6 +72,7 @@ const Header = () => {
                     </div>
                   </span>
                 </button>
+
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li className="nav-item">
@@ -110,7 +115,7 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="justify-content-end w-100">
                     <Link href="#home" as={Link} to="/">
-                      <p className="navbar_para">Ebook Publishers llc</p>
+                      <p className="navbar_para">Book <span class="header_light_bold">Publishing</span></p>
                       <p className="navbar_para_bottom">Consultation</p>
                     </Link>
 
@@ -153,13 +158,13 @@ const Header = () => {
                     </Link>
 
                     <DropdownButton id="dropdown-basic-button" className="navbar-more-btn" title="More">
-                      <Dropdown.Item href="#/action-1">Resume Writing</Dropdown.Item>
+                      {/* <Dropdown.Item href="#/action-1">Resume Writing</Dropdown.Item> */}
                       <Dropdown.Item href="#/action-2">Author Website</Dropdown.Item>
                       <Dropdown.Item href="#/action-3">Book Marketing</Dropdown.Item>
                       <Dropdown.Item href="#/action-4">Book Cover Design</Dropdown.Item>
                       <Dropdown.Item href="#/action-5">Custom Book Illustration</Dropdown.Item>
                       <Dropdown.Item href="#/action-6">Professional Audio Book</Dropdown.Item>
-                      <Dropdown.Item href="#/action-7">Proofreading</Dropdown.Item>
+                      {/* <Dropdown.Item href="#/action-7">Proofreading</Dropdown.Item> */}
                     </DropdownButton>
 
 

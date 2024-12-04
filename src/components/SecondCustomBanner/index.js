@@ -15,15 +15,11 @@ const SecondCustomBanner = () => {
               <div className="sec_title">
                 <h2 data-aos="fade-up"
                 data-aos-offset="0"
-                data-aos-duration="1000">Lorem Ipsum Is A dummy Text</h2>
+                data-aos-duration="1000">Have Questions? We're Here To Help – Contact Falcon Book Writing!</h2>
                 <p data-aos="fade-up"
                 data-aos-offset="0"
                 data-aos-duration="2000">
-                  when an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book. It has survived not only five
-                  centuries, but also the leap into electronic typesetting,
-                  remaining essentially unchanged. It was popularised in the
-                  1960s with the release of Letraset sheets containing Lorem.
+                  Got questions? We're here to help! At Falcon Book Writing, we're committed to making your book-writing journey easy and smooth. Reach out to us today, and start with our book writing service. Contact us now!
                 </p>
                 <button type="button" className="brand_btn" data-aos="fade-up"
                 data-aos-offset="0"

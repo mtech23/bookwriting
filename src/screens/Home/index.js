@@ -59,7 +59,10 @@ import {
   footerBrandImgs,
   polygon03,
   chatIcon,
-  mainHeroCombineSecImg
+  mainHeroCombineSecImg,
+
+
+  partner1, partner2, partner3, partner4, partner5, footerSingleLogo
 } from "../../asserts/images";
 import "./style.css";
 
@@ -74,6 +77,7 @@ import UserLayout from "../../components/Layout/UserLayout";
 import PublishBook from "../../components/PublishBook";
 import Partners from "../../components/Partners";
 import { tab } from "@testing-library/user-event/dist/tab";
+import Portfolio from "../../components/Portfolio";
 
 const tabs = [
   {
@@ -81,7 +85,7 @@ const tabs = [
     title: "Book Publishing",
     icon: helpingIcon01,
     content:
-      "Book Publishing involves the process of producing and distributing literature to the public. It includes everything from manuscript preparation to marketing and distribution. It has evolved over the centuries, incorporating new technologies such as electronic typesetting and digital publishing.",
+      "At Falcon Book Writing, we make publishing easy and hassle-free. From formatting to cover design and distribution, we guide you through the whole process. Moreover, our experts ensure your book meets industry standards and gets the attention it deserves on major platforms, turning your vision into a professionally published masterpiece.",
     className: "blue",
   },
   {
@@ -89,7 +93,7 @@ const tabs = [
     title: "Ghost Writing",
     icon: helpingIcon02,
     content:
-      "Ghost Writing is the practice of writing for someone else who is credited as the author. Ghostwriters play a crucial role in creating content that reflects the voice and ideas of the credited author. This field has seen significant development with the rise of ghostwriting for books, articles, and other media.",
+      "Falcon Book Writing offers professional ghostwriting through our book writers for hire for those who have ideas but no time to write. Share your story or concept, and our talented writers will bring it to life with creativity and precision. You retain full credit while we do the hard work, making your dream book a reality.",
     className: "pink",
   },
   {
@@ -97,15 +101,15 @@ const tabs = [
     title: "Book Editing",
     icon: helpingIcon03,
     content:
-      "when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem.",
+      "Let Falcon Book Writing polish your manuscript to perfection. Our skilled editors refine grammar, structure, and flow while preserving your unique voice. Whether it's a novel or a non-fiction piece, we enhance readability and professionalism, ensuring your book captivates readers and stands out in a competitive market.",
     className: "lime",
   },
   {
     id: "ebook-writing",
-    title: "Ebook Writing",
+    title: "eBook Writing",
     icon: helpingIcon04,
     content:
-      "Ebook Writing focuses on creating digital books that are distributed electronically. This format allows for easy access and distribution to a global audience. Writing for ebooks often involves different considerations compared to print books, including formatting and interactive elements.",
+      "Falcon Book Writing specializes in providing book writing services. Whether it is storytelling, self-help, or business, our book writers for hire create engaging content that suits your audience. Therefore, we ensure your eBook is formatted correctly and visually appealing, ready for digital platforms, helping you connect with readers worldwide effortlessly.",
     className: "orange",
   },
   {
@@ -113,7 +117,7 @@ const tabs = [
     title: "Book Marketing",
     icon: helpingIcon05,
     content:
-      "Lorem Ipsum is a type of placeholder text used in the publishing and design industries. It helps designers visualize how the final text will look in a layout before the actual content is available. The text is derived from sections of Latin literature and has been used since the 1960s.",
+      "At Falcon Book Writing, we get your book in the hands of its audience through marketing strategies. From social media campaigns to Amazon optimization, we make your book come to life by increasing visibility and sales. Therefore, our approach ensures that your story is brought into the limelight as your book becomes a success story.",
     className: "teal",
   },
 ];
@@ -121,6 +125,8 @@ const tabs = [
 const Home = () => {
   // const [activeTab, setActiveTab] = useState({});
   const [activeTab, setActiveTab] = useState(tabs[2]);
+
+  const [toggle, setToggle] = useState(false);
 
   console.log("activetabs", activeTab);
 
@@ -171,11 +177,11 @@ const Home = () => {
                       </h2>
 
                       <h2 className="ebook_publisher_title">
-                        We Are <br/> the Ebook <br/><span class="theme-color">Publishers</span> <br/>You Wish For
+                       Let's <br/> Write Your <br/><span class="theme-color">Story</span> <br/>Together!
                       </h2>
 
                       <p className="avail_discount_text">
-                        Avail a discount on all our services.
+                      Avail A Discount On All Our Services
                       </p>
                     </div>
 
@@ -238,8 +244,12 @@ const Home = () => {
           <div className="polygonImg02">
             <img draggable={false} src={polygon01} alt="polygon"></img>
           </div>
-
           <section className="sec2_about sec_padding">
+            <div className="container-fluid">
+              <div className="row">
+                <Partners />
+              </div>
+            </div>
             <div className="container-fluid">
               <div class="row align-items-center">
                 <div class="col-sm-12 col-lg-6">
@@ -250,22 +260,14 @@ const Home = () => {
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      BRILLIANT
-                      <span class="color-red">
-                        {" "}
-                        MINDS
-                        <br /> PUBLISH{" "}
-                      </span>{" "}
-                      HERE
+                      Smoothing Your <span class="color-red"> Writing Journey </span> Making It Rewarding And Impactful
                     </h2>
                     <p
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
+                      At Falcon Book Writing, we commit to providing Book Writing Service that create you best-written books which could captivate readers and bring a long-lasting impression.
                     </p>
 
                     <p
@@ -273,12 +275,7 @@ const Home = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book. It has survived
-                      not only five centuries, but also the leap into electronic
-                      typesetting, remaining essentially unchanged. It was
-                      popularised in the 1960s with the release of Letraset
-                      sheets containing Lorem.
+                      We will work hand in hand with you to bring your vision to life, whether you are writing a book in the genre of your choice or for a specific purpose. From brainstorming and writing to editing, formatting, and publishing, we have end-to-end support to match your unique needs.
                     </p>
 
                     <p
@@ -286,12 +283,7 @@ const Home = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book. It has survived
-                      not only five centuries, but also the leap into electronic
-                      typesetting, remaining essentially unchanged. It was
-                      popularised in the 1960s with the release of Letraset
-                      sheets containing Lorem.
+                      Whether you are an aspiring author, a business professional who wants to share your expertise or just someone with a story to tell, we make sure your book is polished, engaging, and ready for success.
                     </p>
 
                     <p
@@ -299,9 +291,7 @@ const Home = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
+                      In addition, at falcon book writing, our book writers for hire feels pride themselves on delivering excellent quality and personalized service, making your journey to becoming a published author smooth and rewarding.
                     </p>
                     <button
                       type="submit"
@@ -382,7 +372,79 @@ const Home = () => {
             </div>
           </section>
 
-          <Partners />
+
+          <div className="container-fluid p-0">
+            <div>
+              <div class="marquee-container trusted-partnerContainer">
+                <div class="marquee">
+                <div class="trustedPartners">
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                    <div class="trustedPartner ">
+                      <img draggable={false} src={footerSingleLogo} alt=""></img>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+          
         </section>
 
         {/* </div> */}
@@ -408,7 +470,7 @@ const Home = () => {
                           class={`circle ${item.className} ${
                             isActive ? "active" : ""
                           } making_it_none`}
-                          onClick={() => setActiveTab(item)}
+                          onMouseEnter={() => setActiveTab(item)}
                         >
                           <img
                             src={item.icon}
@@ -470,7 +532,7 @@ const Home = () => {
                         className={`single_duolingo_tab_below ${
                           isActive1 ? "active" : ""
                         }`}
-                        onClick={() => setActiveTab(item)}
+                        onMouseEnter={() => setActiveTab(item)}
                       >
                         <div className="duolingo_tab_img_below">
                           <img
@@ -574,8 +636,8 @@ const Home = () => {
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      Things We Can <br />
-                      <span class="color-red"> Help </span>You <span class="color-red">With</span>
+                       The Services That <br />
+                      <span class="color-red"> Shape Great Books </span>
                     </h2>
                     <div className="helping_tab">
                       <div
@@ -602,16 +664,6 @@ const Home = () => {
                     >
                       {activeTab.content}
                     </p>
-                    <p
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="3000"
-                      className="helping_tab_para"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
-                    </p>
                     <button
                       type="submit"
                       class="brand_btn"
@@ -631,290 +683,13 @@ const Home = () => {
 
         <FirstCustomBanner />
 
-        {/* <section className="first_banner_section">
-<div className="container">
-  <div className="row align-items-end">
-    <div className="col-sm-12 col-lg-7">
-      <div className="first_banner_left_part">
-        <div className="sec_title">
-          <h2 data-aos="fade-right"
-        data-aos-offset="0"
-        data-aos-duration="1000">Lorem Ipsum Is A dummy Text</h2>
-          <p data-aos="fade-right"
-        data-aos-offset="0"
-        data-aos-duration="2000">
-            when an unknown printer took a galley of type and scrambled
-            it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets
-            containing Lorem.
-          </p>
-          <button type="submit" class="brand_btn" data-aos="fade-right"
-        data-aos-offset="0"
-        data-aos-duration="3000">
-            Get Started
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div className="col-sm-8 col-lg-5 mx-auto">
-      <div className="first_banner_right_part">
-        <div data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="3000">
-          <img
-            src={bannerImg01}
-            className="img-fluid"
-            alt="bnner"
-          ></img>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section> */}
-
         <CustomCategory
           className={"category_section"}
           image={categorybk}
           polygon01={polygon01}
         />
 
-        {/* <section className="category_section">
-<div className="category_polygonImg01">
-  <img draggable={false} src={polygon01} alt="polygon"></img>
-</div>
-<div className="category_bk">
-  <img draggable={false} src={categorybk} alt="bk"></img>
-</div>
-
-<div className="container">
-  <div className="row">
-    <div className="col-md-12">
-      <div class="sec_title" bis_skin_checked="1">
-        <h2 data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="1000">
-          <span class="color-red">Categories</span> We Cater for
-          <span class="color-red">Authors</span>
-        </h2>
-      </div>
-    </div>
-
-    <div className="col-sm-12 col-lg-7 ml-auto">
-      <div className="category_circle">
-        <div className="arc">
-          <div className="first_category">
-            <div className="first_category_detail">
-              <span className="category_details"></span>
-              <span className="category_detail_icon">
-                <img
-                  draggable={false}
-                  src={categoryIcon01}
-                  alt="cate"
-                ></img>
-              </span>
-              <span className="category_detail_desc">
-                <h6 class="category_detail_title m-0">Fiction</h6>
-                <p className="category_detail_para m-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
-                </p>
-              </span>
-            </div>
-          </div>
-
-          <div className="second_category">
-            <div className="first_category_detail">
-              <span className="category_details"></span>
-              <span className="category_detail_icon">
-                <img
-                  draggable={false}
-                  src={categoryIcon02}
-                  alt="cate"
-                ></img>
-              </span>
-              <span className="category_detail_desc">
-                <h6 class="category_detail_title m-0">Children</h6>
-                <p className="category_detail_para m-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
-                </p>
-              </span>
-            </div>
-          </div>
-
-          <div className="third_category">
-            <div className="first_category_detail">
-              <span className="category_details"></span>
-              <span className="category_detail_icon">
-                <img
-                  draggable={false}
-                  src={categoryIcon03}
-                  alt="cate"
-                ></img>
-              </span>
-              <span className="category_detail_desc">
-                <h6 class="category_detail_title m-0">Comic</h6>
-                <p className="category_detail_para m-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
-                </p>
-              </span>
-            </div>
-          </div>
-
-          <div className="forth_category">
-            <div className="first_category_detail">
-              <span className="category_details"></span>
-              <span className="category_detail_icon">
-                <img
-                  draggable={false}
-                  src={categoryIcon04}
-                  alt="cate"
-                ></img>
-              </span>
-              <span className="category_detail_desc">
-                <h6 class="category_detail_title m-0">Action</h6>
-                <p className="category_detail_para m-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
-                </p>
-              </span>
-            </div>
-          </div>
-
-          <div className="fifth_category">
-            <div className="first_category_detail">
-              <span className="category_details"></span>
-              <span className="category_detail_icon">
-                <img
-                  draggable={false}
-                  src={categoryIcon05}
-                  alt="cate"
-                ></img>
-              </span>
-              <span className="category_detail_desc">
-                <h6 class="category_detail_title m-0">Romance</h6>
-                <p className="category_detail_para m-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
-                </p>
-              </span>
-            </div>
-          </div>
-
-          <div className="imgUnderArc">
-            <img
-              draggable={false}
-              src={ImgUnderArc}
-              alt="underArc"
-            ></img>
-            <img
-              draggable={false}
-              src={A4book}
-              alt="a4"
-              className="A4book"
-            ></img>
-          </div>
-        </div>
-      </div>
-
-      <div className="details_after_category">
-          <div className="first_category_detail_below">
-              <span className="category_detail_icon">
-                <img
-                  draggable={false}
-                  src={categoryIcon01}
-                  alt="cate"
-                ></img>
-              </span>
-              <span className="category_detail_desc_below">
-                <h6 class="category_detail_title m-0">Fiction</h6>
-                <p className="category_detail_para m-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
-                </p>
-              </span>
-            </div>
-
-
-            <div className="first_category_detail_below">
-              <span className="category_detail_icon">
-                <img
-                  draggable={false}
-                  src={categoryIcon02}
-                  alt="cate"
-                ></img>
-              </span>
-              <span className="category_detail_desc_below">
-                <h6 class="category_detail_title m-0">Children</h6>
-                <p className="category_detail_para m-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
-                </p>
-              </span>
-            </div>
-
-            <div className="first_category_detail_below">
-              <span className="category_detail_icon">
-                <img
-                  draggable={false}
-                  src={categoryIcon03}
-                  alt="cate"
-                ></img>
-              </span>
-              <span className="category_detail_desc_below">
-                <h6 class="category_detail_title m-0">Comic</h6>
-                <p className="category_detail_para m-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
-                </p>
-              </span>
-            </div>
-
-            <div className="first_category_detail_below">
-              <span className="category_detail_icon">
-                <img
-                  draggable={false}
-                  src={categoryIcon04}
-                  alt="cate"
-                ></img>
-              </span>
-              <span className="category_detail_desc_below">
-                <h6 class="category_detail_title m-0">Action</h6>
-                <p className="category_detail_para m-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
-                </p>
-              </span>
-            </div>
-
-            <div className="first_category_detail_below">
-              <span className="category_detail_icon">
-                <img
-                  draggable={false}
-                  src={categoryIcon05}
-                  alt="cate"
-                ></img>
-              </span>
-              <span className="category_detail_desc_below">
-                <h6 class="category_detail_title m-0">Romance</h6>
-                <p className="category_detail_para m-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
-                </p>
-              </span>
-            </div>
-
-
-      </div>
-    </div>
-  </div>
-</div>
-</section> */}
+        <PublishBook />
 
         <section class="process_sec sec_padding">
           <img
@@ -933,9 +708,9 @@ const Home = () => {
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    The Process For <br />
-                    <span class="color-red">Ebooks</span> We
-                    <span class="color-red"> Follow</span>
+                     In Our Step-By-Step <br />
+                    <span class="color-red">eBook</span> Creation
+                    <span class="color-red"> Process:</span>
                   </h2>
                 </div>
               </div>
@@ -949,14 +724,9 @@ const Home = () => {
                   data-aos-duration="1000"
                 >
                   <h4 class="process_step">Step 1</h4>
-                  <h3 class="process_content_title">Crafting the Details</h3>
+                  <h3 class="process_content_title">Initial Consultation</h3>
                   <p>
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem.
+                  We start by having a one-on-one conversation with you to understand what you envision for the eBook. This step helps us learn about the topic, target audience, and specific goals or messages you would like to convey. Be it a how-to guide, a personal story, or a professional resource, we ensure we are on the same page as your expectations from the very start.
                   </p>
                 </div>
               </div>
@@ -996,15 +766,10 @@ const Home = () => {
                 >
                   <h4 class="process_step">Step 2</h4>
                   <h3 class="process_content_title">
-                    Publishing Your Masterpiece
+                  Outline & Planning
                   </h3>
                   <p>
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem.
+                  Having compiled all your ideas, we proceed to creating a detailed outline. It is where we arrange the content into chapters or sections and determine how the information flows and which key points are covered. We will also find out any research or materials needed to support the content. However, the aim is to have a structured plan to make the writing process smooth and ensure that your eBook is well-organized.
                   </p>
                 </div>
               </div>
@@ -1043,14 +808,9 @@ const Home = () => {
                   data-aos-duration="1000"
                 >
                   <h4 class="process_step">Step 3</h4>
-                  <h3 class="process_content_title">Reaching Your Readers</h3>
+                  <h3 class="process_content_title">Writing & Editing</h3>
                   <p>
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem.
+                  With the outline set, our team starts to write the content. We ensure that the text is clear, engaging, and informative for your audience. We then enter the editing process, where we review and refine the content. We improve readability, correct grammatical and spelling errors, and ensure that your voice and message are delivered. We also ensure that the content is consistent and professional.
                   </p>
                 </div>
               </div>
@@ -1091,15 +851,10 @@ const Home = () => {
                 >
                   <h4 class="process_step">Step 4</h4>
                   <h3 class="process_content_title">
-                    Designing a Beautiful Book
+                  Formatting & Publishing
                   </h3>
                   <p>
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem.
+                  Once we complete the writing, we'll format your eBook for an attractive and professional look. This may include selecting specific fonts, layout, design elements to make it as visually appealing and readable as possible on all devices. Then, we walk you through how to publish your eBook into Amazon or on your own website and other publishing sources.
                   </p>
                 </div>
               </div>
@@ -1132,137 +887,11 @@ const Home = () => {
           </div>
         </section>
 
+        <Portfolio />
+
         <SecondCustomBanner />
 
-        {/* <section className="second_banner_section">
-<div className="banner_left_img">
-  <img draggable={false} src={secondBannerImg01} alt="" />
-</div>
-<div className="container">
-  <div className="row align-items-end">
-    <div className="col-md-12">
-      <div className="sec_title">
-        <h2 data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="1000">Lorem Ipsum Is A dummy Text</h2>
-        <p data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="2000">
-          when an unknown printer took a galley of type and scrambled it
-          to make a type specimen book. It has survived not only five
-          centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the
-          1960s with the release of Letraset sheets containing Lorem.
-        </p>
-        <button type="button" className="brand_btn" data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="3000">
-          Get Started
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-<div className="banner_right_img">
-  <img draggable={false} src={banner2imgRight} alt=""></img>
-</div>
-</section> */}
-
-        <PublishBook />
-        {/* <section className="publish_book_sec">
-          <img src={polygon01} className="publish_polygon" alt="polygon" />
-          <img src={polygon03} className="publish_polygon_3" alt="polygon" />
-          <div className="publishBgPattern">
-            <img draggable={false} src={categorybk} alt="" />
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="sec_title">
-                  <h2
-                    data-aos="fade-up"
-                    data-aos-offset="0"
-                    data-aos-duration="1000"
-                  >
-                    How To Easily <span class="color-red">Publish</span> Your{" "}
-                    <span class="color-red">Book</span>
-                  </h2>
-                </div>
-                <div className="publish_book_content">
-                  <img
-                    draggable={false}
-                    src={publishBookImg}
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
         <Testimonial />
-
-        {/* <section className="testimonial">
-<img
-  src={polygon01}
-  className="testimonial_polygon"
-  alt="polygon" 
-/>
-<img
-  draggable={false}
-  src={processFeather}
-  className="process_feather"
-  alt="feather"
-/>
-<div className="container">
-  <div className="row align-items-center">
-    <div className="col-lg-6 col-sm-10 mx-auto">
-      <div className="testimonial_tabs" data-aos="fade-right"
-        data-aos-offset="0"
-        data-aos-duration="1000">
-        <img
-          draggable={false}
-          src={testimonialGroupImg}
-          className="img-fluid"
-          alt=""
-        />
-      </div>
-    </div>
-    <div className="col-lg-6 col-sm-10 mx-auto">
-      <div className="testimonial_tabs_content" data-aos="fade-left"
-        data-aos-offset="0"
-        data-aos-duration="2000">
-        <div className="sec_title">
-          <h2>
-            <span className="color-red">TESTIMONIALS</span>
-          </h2>
-          <img
-            src={testimonialQuote}
-            className="testimonial_quotes"
-            alt=""
-          />
-          <h4>Jhon Smith</h4>
-          <p>
-            “When an unknown printer took a galley of type and scrambled
-            it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets
-            containing Lorem.
-          </p>
-          <img
-            draggable={false}
-            src={ratingStars}
-            className="testimonial_stars"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section> */}
 
         <section className="progress_sec">
           <div className="container-fluid">
@@ -1304,298 +933,88 @@ const Home = () => {
 
         <CustomPublication />
 
-        {/* <section className="publication_sec">
-<img
-  src={polygon01}
-  className="publication_polygon"
-  alt="polygon" 
-/>
-<img
-  src={polygon03}
-  className="publication_polygon_3"
-  alt="polygon" 
-/>
-<div className="container">
-  <div className="row align-items-center">
-    <div className="col-lg-6 col-sm-10 mx-auto">
-      <div className="publication_images" data-aos="fade-right"
-        data-aos-offset="0"
-        data-aos-duration="1000">
-        <img
-          draggable={false}
-          src={publicationBook1}
-          className="publicationBook1"
-          alt=""
-        />
-        <img
-          draggable={false}
-          src={publicationBook2}
-          className="publicationBook2"
-          alt=""
-        />
-        <div className="audio_player">
-          <audio controls>
-            <source src="horse.ogg" type="audio/ogg" />
-            <source src="horse.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-      </div>
-    </div>
-    <div className="col-lg-6 col-sm-10 mx-auto">
-      <div className="publication_content">
-        <div className="sec_title">
-          <h2 data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="1000">
-            Paperback <br />
-            <span class="color-red">Publication</span>
-          </h2>
-          <p data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="2000">
-            Your book's global accessibility is a top priority for us.
-            Ensuring availability across all platforms, our
-            comprehensive marketing and distribution strategies
-            encompass both hardcover and paperback options. One source
-            for everything you require, backed by our committed group of
-            leading experts.
-          </p>
-          <h2 data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="3000">
-            Online <br />
-            <span class="color-red">Publication</span>
-          </h2>
-          <p data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="3000">
-            We are highly satisfied with our capacity to transform
-            aspiring authors into published ones by granting them
-            unmatched authority over all aspects of their creative
-            concept and publishing objectives, focusing on eBooks. Our
-            all-encompassing assistance surpasses conventional
-            publishing; we actively collaborate with you to formulate a
-            resilient marketing strategy, guaranteeing a triumphant
-            debut and optimizing your financial gains.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section> */}
-
-        {/* <section class="faqs_sec">
-
-<div className="publishBgPattern">
-  <img draggable={false} src={categorybk} alt="" />
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="sec_title">
-        <h2 data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="2000">
-          FREQUENTLY
-          <span class="color-red">ASKED QUESTIONS</span>
-        </h2>
-      </div>
-    </div>
-    <div class="col-lg-6 col-sm-10 mx-auto">
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>
-            <span class="numbering">01.</span>
-            <span class="card_btn_content">
-              Lorem Ipsum is simply dummy text of the and typesetting
-              industry.
-            </span>
-          </Accordion.Header>
-          <Accordion.Body>
-            Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining
-            essentially unchanged. It was
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>
-            <span class="numbering">02.</span>
-            <span class="card_btn_content">
-              Lorem Ipsum is simply dummy text of the and typesetting
-              industry.
-            </span>
-          </Accordion.Header>
-          <Accordion.Body>
-            Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining
-            essentially unchanged. It was
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="2">
-          <Accordion.Header>
-            <span class="numbering">03.</span>
-            <span class="card_btn_content">
-              Lorem Ipsum is simply dummy text of the and typesetting
-              industry.
-            </span>
-          </Accordion.Header>
-          <Accordion.Body>
-            Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining
-            essentially unchanged. It was
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-    </div>
-    <div class="col-lg-6 col-sm-10 mx-auto">
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>
-            <span class="numbering">04.</span>
-            <span class="card_btn_content">
-              Lorem Ipsum is simply dummy text of the and typesetting
-              industry.
-            </span>
-          </Accordion.Header>
-          <Accordion.Body>
-            Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining
-            essentially unchanged. It was
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>
-            <span class="numbering">05.</span>
-            <span class="card_btn_content">
-              Lorem Ipsum is simply dummy text of the and typesetting
-              industry.
-            </span>
-          </Accordion.Header>
-          <Accordion.Body>
-            Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining
-            essentially unchanged. It was
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="2">
-          <Accordion.Header>
-            <span class="numbering">06.</span>
-            <span class="card_btn_content">
-              Lorem Ipsum is simply dummy text of the and typesetting
-              industry.
-            </span>
-          </Accordion.Header>
-          <Accordion.Body>
-            Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining
-            essentially unchanged. It was
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-    </div>
-  </div>
-</div>
-</section> */}
-
         <Faq />
-
-        {/* <section class="get_touch_sec">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-4 col-sm-10 mx-auto">
-      <div class="get_touch_img" data-aos="fade-right"
-        data-aos-offset="0"
-        data-aos-duration="1000">
-        <img
-          draggable={false}
-          src={getTouchBook}
-          class="img-fluid"
-          alt=""
-        />
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-      <div class="get_touch_title">
-        <div class="sec_title">
-          <h2 data-aos="fade-up"
-        data-aos-offset="0"
-        data-aos-duration="2000">
-            TO BE
-            <br />
-            DESIGNED!
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-      <div class="get_touch_form">
-        <form>
-          <div class="mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Name"
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Email"
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              type="tel"
-              class="form-control"
-              placeholder="Phone No"
-            />
-          </div>
-          <div class="mb-3">
-            <textarea
-              class="form-control"
-              placeholder="Message"
-            ></textarea>
-          </div>
-          <button type="submit" class="brand_btn">
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-</section> */}
 
         <GetTouch />
 
-        
+
+
+        <div className={`floatbutton ${toggle ? 'active' : ''}`}>
+          <div className="btns_wrap">
+
+            <a href="javascript:;" className="chat_wrap" onclick="$zopim.livechat.window.toggle()">
+              <span className="icoo"><i className="fa fa-comment"></i></span>
+              <span>Chat With Us</span>
+            </a>
+            <a href="tel:(855) 288-8770" className="call_wrap">
+              <span className="icoo"><i className="fa fa-phone"></i></span>
+              <span> (855) 288-8770</span>
+            </a>
+          </div>
+
+
+
+          <div className={`clickbutton ${toggle ? 'active' : ''}`} onClick={() => { setToggle(!toggle) }}>
+            <div className="crossplus">50% Off On All Services</div>
+          </div>
+          <div className="banner-form">
+            <h3>Chat With Us to <br />Avail 50% Discount</h3>
+            <div className="banform">
+              <div className="container">
+                <div className="row">
+                  <div className="ban-form">
+                    <form className="cmxform" id="ordernow-form" action="https://www.falconbookwriting.com/webpages/FormController.php" method="post">
+                      <div className="alert alert-danger error" style={{ display: "none" }}></div>
+                      <div className="row">
+                        <div className="col-lg-12">
+                          <div className="fldset">
+                            <input type="text" name="Name" placeholder="Name" className="required" onkeyup="validateName(this)" onkeydown="return alphaOnly(event)" required="" />
+
+                          </div>
+                        </div>
+                        <div className="col-lg-12">
+                          <div className="fldset">
+                            <input type="Email" name="Email" placeholder=" Email" onkeyup="emailValidation(this)" onkeypress="emailValidation(this)" className="required" required="" />
+                          </div>
+                        </div>
+                        <div className="col-lg-12">
+                          <div className="fldset">
+
+
+                            <input type="text" id="phone-coun" name="Number" placeholder="Phone number" pattern="^\d{5,}$" minlength="9" required />
+                            <span className="bg-danger col-lg-offset-3 contact_error " style={{ display: "none" }}>Contact No Incorrect</span>
+
+                            <input type="hidden" className="form-control" placeholder="Url" id="url" name="url" value="" required />
+                            <input type="tel" name="brand_id" id="brand_id" value="15" hidden />
+                            <input type="tel" name="package_id" id="package_id" value="1" hidden />
+                          </div>
+                        </div>
+                        <div className="col-lg-12">
+                          <div className="fldset">
+                            <textarea name="Message" rows="7" placeholder="Talk About Your Project" id="textInput" minlength="25" required></textarea>
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="fldset">
+                            <input name="submit" type="submit" placeholder="Connect With Us" required />
+                            <input className="" type="hidden" name="ctry" value="" />
+                            <input type="hidden" name="pc" value="" />
+                            <input type="hidden" name="cip" value="" className="form-1-ip" />
+                            <input type="hidden" name="hiddencapcha" value="" />
+                            <input type="hidden" id="location" name="locationURL" value="https://www.falconbookwriting.com/" />
+
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </UserLayout>
     </>
   );

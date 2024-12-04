@@ -29,54 +29,33 @@ const Faq = () => {
                   <Accordion.Header>
                     <span class="numbering">01.</span>
                     <span class="card_btn_content">
-                      Lorem Ipsum is simply dummy text of the and typesetting
-                      industry.
+                    What is the difference between self-publishing and traditional publishing?
                     </span>
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was
+                  Self-publishing lets you control everything from writing to marketing, while traditional publishing is where a publishing house deals with most of the process, like distribution and promotion. Both are available at Falcon Book Writing, where I provide you with personalized guidance according to your preferences.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                   <Accordion.Header>
                     <span class="numbering">02.</span>
                     <span class="card_btn_content">
-                      Lorem Ipsum is simply dummy text of the and typesetting
-                      industry.
+                    How do you help with book marketing?
                     </span>
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was
+                  Our book marketing service entails creating a customized marketing plan, organizing book launches, and promoting your book through every available online and offline channels. Additionally, we walk you through the author's platform creation process, targeting the right audience, and maximizing the publicity of your work.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
                   <Accordion.Header>
                     <span class="numbering">03.</span>
                     <span class="card_btn_content">
-                      Lorem Ipsum is simply dummy text of the and typesetting
-                      industry.
+                    What does your ghostwriting service package include?
                     </span>
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was
+                  Our ghostwriting services provide you the option of book writers for hire from which you will get a professional writer who drafts your book based on your thoughts, vision, and voice. Our team allows you to own your story fully, ensuring it remains authentic, whether you want us to write the entire book or just certain parts.
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
@@ -87,54 +66,33 @@ const Faq = () => {
                   <Accordion.Header>
                     <span class="numbering">04.</span>
                     <span class="card_btn_content">
-                      Lorem Ipsum is simply dummy text of the and typesetting
-                      industry.
+                    What does your book editing service include?
                     </span>
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was
+                  Our book editing service is developmental, line, and copyedits. We restructure and improve the text's flow, grammar, and clarity to ensure your manuscript is ready for publication. Furthermore, the editors are in close touch with you to maintain the voice and enhance the quality of writing.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                   <Accordion.Header>
                     <span class="numbering">05.</span>
                     <span class="card_btn_content">
-                      Lorem Ipsum is simply dummy text of the and typesetting
-                      industry.
+                    What do we offer that other writers' service providers do not?
                     </span>
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was
+                  We offer a complete package of book writing service at Falcon Book Writing-from consultation to post-publishing marketing-to cover every aspect of your book-creation process. Therefore, our team will work with you personally to ensure the best results for every part of the book project, tailoring it into a one-on-one personal experience.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
                   <Accordion.Header>
                     <span class="numbering">06.</span>
                     <span class="card_btn_content">
-                      Lorem Ipsum is simply dummy text of the and typesetting
-                      industry.
+                    Do I need to buy a package or can I just choose individual services?
                     </span>
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was
+                  Yes, you could choose single services or opt for the whole package. However, we have flexibility in our services that can offer you whatever fits your book project from book editing to full service in writing and marketing.
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>

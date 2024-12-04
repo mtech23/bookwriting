@@ -1,5 +1,5 @@
 import React from 'react'
-import { siteScrollImg } from '../../asserts/images'
+import { siteScrollImg, partner1, partner2, partner3, partner4, partner5 } from '../../asserts/images'
 
 const Partners = () => {
   return (
@@ -7,72 +7,72 @@ const Partners = () => {
             <div>
               <div class="marquee-container trusted-partnerContainer">
                 <div class="marquee">
-                  <div class="trustedPartners">
+                <div class="trustedPartners">
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner1} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner2} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner3} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner4} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner5} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner1} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner2} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner3} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner4} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner5} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner1} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner2} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner3} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner4} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner5} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner1} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner2} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner3} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner4} alt=""></img>
                     </div>
                     <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
+                      <img draggable={false} src={partner5} alt=""></img>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+    </div>
   )
 }
 

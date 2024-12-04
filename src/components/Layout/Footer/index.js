@@ -289,11 +289,11 @@ const Footer = () => {
               </div>
               <div className="col-lg-3 col-sm-12">
                 <div className="footer_avail">
-                  <h3 className="footer_avail-text">
+                  {/* <h3 className="footer_avail-text">
                     Avail $199 Value <br />
                     Service For Free
                   </h3>
-                  <button className="avail_btn">Avail Now</button>
+                  <button className="avail_btn">Avail Now</button> */}
                   <div className="dmca_img">
                     <img src={dmcaImg} alt="" />
                   </div>

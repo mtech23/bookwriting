@@ -15,19 +15,14 @@ const FirstCustomBanner = () => {
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    Lorem Ipsum Is A dummy Text
+                    We Help You Write, Edit, And Publish Your Book! 
                   </h2>
                   <p
                     data-aos="fade-right"
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic typesettin
-                    g, remaining essentially unchanged. It was popularised in
-                    the 1960s with the release of Letraset sheets containing
-                    Lorem.
+                    At Falcon Book Writing, we help you create and publish your book. With our book writing service, we create and refine your manuscript then prepare it for publication smoothly, our book writers for hire works with you to bring your ideas to life and share them with the world.
                   </p>
                   <button
                     type="submit"

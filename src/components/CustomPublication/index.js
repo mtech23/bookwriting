@@ -58,12 +58,7 @@ const CustomPublication = () => {
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    Your book's global accessibility is a top priority for us.
-                    Ensuring availability across all platforms, our
-                    comprehensive marketing and distribution strategies
-                    encompass both hardcover and paperback options. One source
-                    for everything you require, backed by our committed group of
-                    leading experts.
+                    With Falcon Book Writing, make your book available in a durable, easy-to-carry format. A paperback favorite for readers is inexpensive, lightweight, and convenient to carry. We'll do it all for you-designing the cover to the interior formatting-to ensure that your book looks professional and has that professional appeal, thus making it easy for the book to be marketed to an even larger population when sold through online markets or in bookstores once published.
                   </p>
                   <h2
                     data-aos="fade-up"
@@ -78,14 +73,7 @@ const CustomPublication = () => {
                     data-aos-offset="0"
                     data-aos-duration="3000"
                   >
-                    We are highly satisfied with our capacity to transform
-                    aspiring authors into published ones by granting them
-                    unmatched authority over all aspects of their creative
-                    concept and publishing objectives, focusing on eBooks. Our
-                    all-encompassing assistance surpasses conventional
-                    publishing; we actively collaborate with you to formulate a
-                    resilient marketing strategy, guaranteeing a triumphant
-                    debut and optimizing your financial gains.
+                    The hardcover is ideal for the production of an elegant author's edition with a sturdy cover, often surrounded by a dust jacket. We completely take care of all the processes involved from the design to the printing at Falcon Book Writing. Especially, with hardcover publishing you will get a high-quality, stand-out book, making this ideal for gifts, libraries and those who appreciate lasting durability. We professionally prepare your book to ensure you get the best possible presentation.
                   </p>
                 </div>
               </div>

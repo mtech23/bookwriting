@@ -42,7 +42,8 @@ import processImg03 from "./process-img-3.png";
 import processImg04 from "./process-img-4.png";
 import processFeather from "./feather.png";
 import secondBannerImg01 from "./banner2img.png";
-import getTouchBook from "./get-touch-book.webp";
+// import getTouchBook from "./get-touch-book.webp";
+import getTouchBook from "./get-touch-book.png";
 import btnBG from "./btn-bg.webp";
 import helpingBook from "./helping-book.png";
 import banner2imgRight from "./banner2img-right.png";
@@ -98,11 +99,40 @@ import amazonPrintingImg2 from "./amazonPrintingImg2.png";
 import bookReviewImg2 from "./bookReviewImg2.png";
 import prPublicationImg2 from "./prPublicationImg2.png";
 
-import fictionImg from "./fictionImg.jpg";
-import actionImg from "./actionImg.jpg";
-import commicImg from "./commicImg.jpg";
-import childrenImg from "./childrenImg.jpg";
-import romanceImg from "./romanceImg.jpg";
+
+
+import partner1 from "./partner-1.png";
+import partner2 from "./partner-2.png";
+import partner3 from "./partner-3.png";
+import partner4 from "./partner-4.png";
+import partner5 from "./partner-5.png";
+
+
+import portfolioImg1 from "./portfolio-img-1.png";
+import portfolioImg2 from "./portfolio-img-2.png";
+import portfolioImg3 from "./portfolio-img-3.png";
+import portfolioImg4 from "./portfolio-img-4.png";
+import portfolioImg5 from "./portfolio-img-5.png";
+import portfolioImg6 from "./portfolio-img-6.png";
+import portfolioImg7 from "./portfolio-img-7.png";
+import portfolioImg8 from "./portfolio-img-8.png";
+import portfolioImg9 from "./portfolio-img-9.png";
+import portfolioImg10 from "./portfolio-img-10.png";
+import portfolioImg11 from "./portfolio-img-11.png";
+import portfolioImg12 from "./portfolio-img-12.png";
+import portfolioImg13 from "./portfolio-img-13.png";
+import portfolioImg14 from "./portfolio-img-14.png";
+import portfolioImg15 from "./portfolio-img-15.png";
+
+
+
+import footerSingleLogo from "./footer-single-logo.png";
+
+import fictionImg from "./fictionImg.png";
+import actionImg from "./actionImg.png";
+import commicImg from "./commicImg.png";
+import childrenImg from "./childrenImg.png";
+import romanceImg from "./romanceImg.png";
 
 import testVideo1 from "./testimonial-video1.mp4";
 
@@ -214,4 +244,28 @@ export {
   commicImg,
   childrenImg,
   romanceImg,
+
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+
+  footerSingleLogo,
+
+  portfolioImg1,
+  portfolioImg2,
+  portfolioImg3,
+  portfolioImg4,
+  portfolioImg5,
+  portfolioImg6,
+  portfolioImg7,
+  portfolioImg8,
+  portfolioImg9,
+  portfolioImg10,
+  portfolioImg11,
+  portfolioImg12,
+  portfolioImg13,
+  portfolioImg14,
+  portfolioImg15,
 };

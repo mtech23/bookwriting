@@ -24,7 +24,7 @@ const categories = [
   {
     id: "fiction",
     title: "Fiction",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "Our fiction book writing service tell stories that have been invented to take readers into different worlds.",
     icon: categoryIcon01,
     className: "first_category",
     // image: A4book,
@@ -33,16 +33,16 @@ const categories = [
   {
     id: "children",
     title: "Children",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "Children's books are written for young readers, often colorful and simple in language.",
     icon: categoryIcon02,
     className: "second_category",
     // image: A4book1,
     image: childrenImg,
   },
   {
-    id: "comic",
-    title: "Comic",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    id: "faith",
+    title: "Faith",
+    desc: "Comic books use pictures and text to tell stories. They often feature superheroes, adventures, or humor.",
     icon: categoryIcon03,
     className: "third_category",
     // image: A4book,
@@ -51,7 +51,7 @@ const categories = [
   {
     id: "action",
     title: "Action",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "Our book writers for hire can create outstanding action books which are full of exciting, fast-paced events.",
     icon: categoryIcon04,
     className: "forth_category",
     // image: A4book1,
@@ -60,7 +60,7 @@ const categories = [
   {
     id: "romance",
     title: "Romance",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "Romance novels tend to contain love stories that deal with emotion and romance.",
     icon: categoryIcon05,
     className: "fifth_category",
     // image: A4book,
@@ -94,12 +94,8 @@ const CustomCategory = (props) => {
                   data-aos-offset="0"
                   data-aos-duration="1000"
                 >
-                  <span class="color-red">Categories </span> We Cater for
-                  <span class="color-red">
-                    {" "}
-                    <br />
-                    Authors
-                  </span>
+                  <span class="color-red">Genres </span> To Inspire Your Writing
+                  <span class="color-red"> Journey</span>
                 </h2>
               </div>
             </div>

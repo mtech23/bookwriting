@@ -15,11 +15,11 @@ const GetTouch = () => {
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    STAY IN
+                    Let's Be In
                     <br />
-                    TOUCH
+                    Touch!
                     <br />
-                    WITH US!
+                    Reach Out Now!
                   </h2>
                 </div>
               </div>
