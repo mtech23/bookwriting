@@ -134,6 +134,33 @@ const PublishBook = () => {
       { id: "step3", text: "Line Editing" },
       { id: "step4", text: "Proofreading" },
       { id: "step5", text: "Final Review" },
+    ],
+    about: [
+      {
+        id: "step1",
+        text: "Consult With Our Expert Team",
+        // position: { top: "30px", left: "50px" },
+      },
+      {
+        id: "step2",
+        text: "Refine Your Manuscript",
+        // position: { top: "80px", left: "100px" },
+      },
+      {
+        id: "step3",
+        text: "Design Your Book Cover",
+        // position: { top: "120px", left: "150px" },
+      },
+      {
+        id: "step4",
+        text: "Choose Your Publishing Format",
+        // position: { top: "160px", left: "200px" },
+      },
+      {
+        id: "step5",
+        text: "Launch And Promote Your Book",
+        // position: { top: "200px", left: "250px" },
+      },
     ]
   };
 
@@ -193,11 +220,15 @@ const PublishBook = () => {
     {
       path: "/proof-reading",
       stepData: services.editingProofreadingSteps
+    },
+    {
+      path: "/about-us",
+      stepData: services.about
     }
   ]
 
   const tooltipData = () => {
-    const data = pathList?.find(item => item.path == pathname)?.stepData
+    const data = pathList?.find(item => item.path == pathname)?.stepData  || services.home
     return data
 
   }
@@ -235,7 +266,7 @@ const PublishBook = () => {
                     alt=""
                     style={{ width: "100%" }} // Ensure the image scales correctly
                   />
-                  {tooltipData().map((step) => (
+                  {tooltipData()?.map((step) => (
                     <div
                       key={step.id}
                       className={`step-dot ${step.id}`}

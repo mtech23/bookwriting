@@ -911,10 +911,8 @@ const Home = () => {
                   data-aos-duration="1000"
                 >
                   <h4 class="process_step">Step 5</h4>
-                  <h3 class="process_content_title">Writing & Editing</h3>
-                  <p>
-                  With the outline set, our team starts to write the content. We ensure that the text is clear, engaging, and informative for your audience. We then enter the editing process, where we review and refine the content. We improve readability, correct grammatical and spelling errors, and ensure that your voice and message are delivered. We also ensure that the content is consistent and professional.
-                  </p>
+                  <h3 class="process_content_title">Marketing & Promotion</h3>
+                  <p>Once you publish your eBook, we assist you in sharing it with the world. This step involves a customized marketing strategy to reach your target audience. We guide you on how to use social media, email campaigns, and other means to promote your eBook.</p>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 mx-auto">

@@ -104,7 +104,7 @@ const CustomCategory = (props) => {
             <div className="col-sm-12 col-lg-7 ml-auto">
               <div className="category_circle">
                 <div className="arc">
-                  {categories.map((item, index) => {
+                  {categories?.map((item, index) => {
                     const isActive2 = activeTab.id === item.id;
                     return (
                       <div
@@ -253,7 +253,7 @@ const CustomCategory = (props) => {
               </div>
 
               <div className="details_after_category">
-                {categories.map((item, index) => {
+                {categories?.map((item, index) => {
                   const isActive2 = activeTab.id === item.id;
                   return (
                     <div
