@@ -22,19 +22,19 @@ const BookPublishing = () => {
         <UserLayout>
 
         <InnerHero
-          innerheroclass="bookPublishingBg"
-          title="Where Every Voice Finds Its Place In"
-          subtitle=" Print"
-          para="At Random House Publishers, we believe in the transformative power of words. Our legacy is built on a commitment to nurturing creativity, fostering diversity, and amplifying voices from every corner of the globe. With a rich history spanning decades, we've been at the forefront of the literary world, shaping the landscape of storytelling one book at a time."
+          innerheroclass="bookpublishingBg"
+          title="Helping Authors Share Their Words with the"
+          subtitle=" World"
+          para="Falcon Book Writing is professional in making the book publishing process easy for the author. We handle everything, from formatting and design to distribution, ensuring your work is presented to the world professionally. The goal is to make the book available to the reader through various platforms and channels."
         />
 
         <Section2
         innerSec2Class="innerbrilliant_mind_section"
-          title="Every Book Tells A   "
-          subtitle="Story;"
-          title2="Let Us Tell Yours"
-          description="Random House Publishers's book publishing service operates on a foundation of editorial excellence, author-centricity, global reach, innovative marketing, and a commitment to diversity and inclusion. With a team of experienced editors dedicated to refining manuscripts, Random House Publishers ensures that every book meets the highest standards of quality. Authors receive tailored support throughout the publishing process, from development to marketing, enabling them to realize their creative and commercial goals. Leveraging a vast distribution network and cutting-edge marketing strategies, Random House Publishers reaches readers worldwide through various formats and platforms. Moreover, by actively championing diverse voices and perspectives, Random House Publishers enriches the literary landscape and fosters a more inclusive publishing industry, shaping the future of literature and inspiring readers globally."
-          description2="Random House Publishers's book publishing service operates on a foundation of editorial excellence, author-centricity, global reach, innovative marketing, and a commitment to diversity and inclusion. With a team of experienced editors dedicated to refining manuscripts, Random House Publishers ensures that every book meets the highest standards of quality. Authors receive tailored support throughout the publishing process, from development to marketing, enabling them to realize their creative and commercial goals. Leveraging a vast distribution network and cutting-edge marketing strategies, Random House Publishers reaches readers worldwide through various formats and platforms. "
+          title="Reach Your Readers   "
+          subtitle="Faster"
+          title2="With Our Book Publishing Service"
+          description="At Falcon Book Writing, we know that you want to get your book to the reader's hands as quickly as possible. That is why our Book Publishing service is designed to help you move from manuscript to market faster. We streamlined the process so that all the work, from editing and design to distribution and marketing, will be done to make sure your book is ready to be sold in no time."
+          description2="Our team goes the extra mile working along with you to guarantee success in your publishing journey. Giving you personalized service to meet all your needs. We take it all off your hands as regards the complexities surrounding publishing and let you do what best you can: write. Whether you are a first-time author or an experienced one. Falcon Book Writing guides you through the world of publishing with ease, getting your book into readers' hands and onto store shelves faster than ever before."
           // subtitle1="How we work?"
           // subtitle2="    Tailored Collaborations?"
           // subtitle3="  Expert Guidance"

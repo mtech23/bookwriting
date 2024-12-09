@@ -19,19 +19,20 @@ const ProofReading = () => {
       <UserLayout>
         <InnerHero
           innerheroclass="proofReadingBg"
-          title="Professional Proofreading And"
-          subtitle=" Editing Services"
-          para="We believe that every children's book deserves to come alive with vibrant characters that leap off the page and into the hearts of young readers. That's why we're proud to offer our excellent children's book illustration service, where imagination knows no bounds and creativity flourishes."
+          title="A Fresh Set Of"
+          subtitle=" Eyes"
+          title2=" For Flawless Writing"
+          para="At Falcon Book Writing, we make sure your work gets the professional editing and proofreading to make it perfect. We'll catch all those errors to make it even clearer for your work to come out perfect. Let's shine you with the best polished version of your writing."
         />
 
         <Section2
           innerSec2Class="innerbrilliant_mind_section"
-          title="Providing Top-Quality Book   "
-          subtitle=" Proofreading Services "
-        //   title2="Your Narrative"
+          title="The Final Touch Your   "
+          subtitle=" Manuscript "
+          title2="Needs"
         //   subtitle1="How we work?"
-          description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
-          description2="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam"
+          description="Our Falcon Book Writing Editing & Proofreading service is essential, after you’ve poured your heart and soul into writing, it’s important to ensure that your work is polished and ready to shine."
+          description2="Our expert editors review the manuscript to correct grammatical mistakes, spelling errors, and poorly constructed sentences. They'll check that your ideas would be readable and flow freely without confusion to those reading them. Our proofreading ensures that we keep details such as punctuation, styles, and formats uniformly correct. With our service, you can be sure that your manuscript is the best version of itself before it reaches your readers. Choose us for that extra layer of perfection that will raise your book and make a lasting impression."
           // subtitle1="How we work?"
           // subtitle2="    Tailored Collaborations?"
           // subtitle3="  Expert Guidance"

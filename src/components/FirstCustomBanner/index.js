@@ -1,5 +1,6 @@
 import React from "react";
 import { bannerImg01 } from "../../asserts/images";
+import { Link } from "react-router-dom";
 
 const FirstCustomBanner = () => {
   return (
@@ -26,13 +27,15 @@ const FirstCustomBanner = () => {
                   </p>
                   <button
                     type="submit"
-                    class="brand_btn"
+                    class="brand_btn blink"
                     data-aos="fade-right"
                     data-aos-offset="0"
                     data-aos-duration="3000"
+                    
                   >
-                    Get Started
+                    <Link to={'/contact-us'}>Get Started</Link>
                   </button>
+                  <button className="btn-bg-red" data-aos="fade-right" data-aos-offset="0" data-aos-duration="3000"><a href="tel:(855) 288-8770">Call Us Now</a></button>
                 </div>
               </div>
             </div>

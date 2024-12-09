@@ -10,6 +10,7 @@ import {
   redSemibehindBook,
 } from "../../asserts/images";
 import Partners from "../Partners";
+import { Link } from "react-router-dom";
 const Section2 = (props) => {
   return (
     <div>
@@ -89,13 +90,19 @@ const Section2 = (props) => {
                   {props?.description3 && (
                     <p> {props?.description3}</p>
                   )}
-                  {props.actions && (
+                  <div class="inner-btn-group">
+                  <button className="btn-bg-white blink">
+                    <Link to={'/contact-us'}>Get Started</Link>
+                  </button>
+                  <button className="btn-bg-red"><a href="tel:(855) 288-8770">Call Us Now</a></button>
+                </div>
+                  {/* {props.actions && (
                     <div className="flex inner-btn-group">
                       {props.btn1 && (
                         <button
                           type="submit"
                           // class="brand_btn"
-                          class="btn-bg-white"
+                          class="btn-bg-white blink"
                           data-aos="fade-right"
                           data-aos-offset="0"
                           data-aos-duration="2000"
@@ -115,8 +122,9 @@ const Section2 = (props) => {
                           {props.btn2}
                         </button>
                       )}
+                      
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
 

@@ -5,6 +5,7 @@ import {
   publicationBook1,
   publicationBook2,
 } from "../../asserts/images";
+import { Link } from "react-router-dom";
 
 const CustomPublication = () => {
   return (
@@ -75,6 +76,12 @@ const CustomPublication = () => {
                   >
                     The hardcover is ideal for the production of an elegant author's edition with a sturdy cover, often surrounded by a dust jacket. We completely take care of all the processes involved from the design to the printing at Falcon Book Writing. Especially, with hardcover publishing you will get a high-quality, stand-out book, making this ideal for gifts, libraries and those who appreciate lasting durability. We professionally prepare your book to ensure you get the best possible presentation.
                   </p>
+                  <div class="inner-btn-group">
+                    <button className="btn-bg-white blink">
+                      <Link to={'/contact-us'}>Get Started</Link>
+                    </button>
+                    <button className="btn-bg-red"><a href="tel:(855) 288-8770">Call Us Now</a></button>
+                  </div>
                 </div>
               </div>
             </div>

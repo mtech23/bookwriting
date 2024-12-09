@@ -1,18 +1,22 @@
 import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "../screens/Home";
-import GhostWriter from "../screens/GhostWriter";
+import GhostWriting from "../screens/GhostWriting";
 import FaithWriter from "../screens/FaithWiter";
 import BookEditing from "../screens/BookEditing";
 import BookPublishing from "../screens/BookPublishing";
 import BookMarketing from "../screens/BookMarketing";
-import CoverDesign from "../screens/CoverDesign";
+import BookCoverDesign from "../screens/BookCoverDesign";
 import AudioBookDesign from "../screens/AudioBookDesign";
+import AboutUs from "../screens/AboutUs";
+import ContactUs from "../screens/ContactUs";
+import FeaturedAuthor from "../screens/FeaturedAuthor";
+import PressRelease from "../screens/PressRelease";
 import BookTrailer from "../screens/BookTrailer";
-import Illustration from "../screens/Illustration";
+import CustomBookIllustration from "../screens/CustomBookIllustration";
 import ChildrenIllustration from "../screens/ChildrenIllustration";
 import ChildrenBookPrinting from "../screens/ChildrenBookPrinting";
-import WebsiteAuthor from "../screens/WebsiteAuthor";
+import AuthorWebsite from "../screens/AuthorWebsite";
 import CommicIllustration from "../screens/CommicIllustration";
 
 import BookFormatting from "../screens/BookFormatting";
@@ -22,21 +26,37 @@ import EBookSEO from "../screens/EBookSEO";
 import AmazonPrinting from "../screens/AmazonPrinting";
 import BookReview from "../screens/BookReview";
 import PrPublication from "../screens/PrPublication";
+import EbookWriting from "../screens/EbookWriting";
+import ArticleWritingPublication from "../screens/ArticleWritingPublication";
+import BookVideoTrailer from "../screens/BookVideoTrailer";
+import CopyrightsProtection from "../screens/CopyrightsProtection";
+import ThankYou from "../screens/ThankYou";
+
+
 
 const Router = () => {
   return (
-    <BrowserRouter basename="bookwriting">
+    <BrowserRouter basename="/bookwriting">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ghost-writer" element={<GhostWriter />} />
+        <Route path="/ghost-writing" element={<GhostWriting />} />
         <Route path="/faith-writer" element={<FaithWriter />} />
         <Route path="/book-editing" element={<BookEditing />} />
         <Route path="/book-publishing" element={<BookPublishing />} />
         <Route path="/book-marketing" element={<BookMarketing />} />
-        <Route path="/cover-design" element={<CoverDesign />} />
+        <Route path="/book-cover-design" element={<BookCoverDesign />} />
         <Route path="/audio-book-design" element={<AudioBookDesign />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/thankyou" element={<ThankYou/>} />
+        <Route path="/featured-author" element={<FeaturedAuthor />} />
+        <Route path="/press-release" element={<PressRelease />} />
         <Route path="/book-trailer" element={<BookTrailer />} />
-        <Route path="/illustration" element={<Illustration />} />
+        <Route path="/custom-book-illustration" element={<CustomBookIllustration />} />
+        <Route path="/ebook-writing" element={<EbookWriting />} />
+        <Route path="/article-writing-publication" element={<ArticleWritingPublication />} />
+        <Route path="/book-video-trailer" element={<BookVideoTrailer />} />
+        <Route path="/copyrights-protection" element={<CopyrightsProtection />} />
         <Route
           path="/children-illustration"
           element={<ChildrenIllustration />}
@@ -45,7 +65,7 @@ const Router = () => {
           path="/children-book-printing"
           element={<ChildrenBookPrinting />}
         />
-        <Route path="/website-author" element={<WebsiteAuthor />} />
+        <Route path="/author-website" element={<AuthorWebsite />} />
         <Route path="/commic-illustration" element={<CommicIllustration />} />
 
         {/* New Pages */}

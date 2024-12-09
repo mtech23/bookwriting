@@ -108,6 +108,14 @@ import partner4 from "./partner-4.png";
 import partner5 from "./partner-5.png";
 
 
+import bestselling1 from "./bestselling1.png";
+import bestselling2 from "./bestselling2.png";
+import bestselling3 from "./bestselling3.png";
+import bestselling4 from "./bestselling4.png";
+import bestselling5 from "./bestselling5.png";
+import bestselling6 from "./bestselling6.png";
+
+
 import portfolioImg1 from "./portfolio-img-1.png";
 import portfolioImg2 from "./portfolio-img-2.png";
 import portfolioImg3 from "./portfolio-img-3.png";
@@ -137,6 +145,49 @@ import romanceImg from "./romanceImg.png";
 import testVideo1 from "./testimonial-video1.mp4";
 
 import testPlayIcon from "./test_play-icon.png";
+
+
+
+import b1 from "./b1.jpg";
+import b2 from "./b2.jpg";
+import b3 from "./b3.jpg";
+import b4 from "./b4.jpg";
+import b5 from "./b5.jpg";
+import b6 from "./b6.jpg";
+import b7 from "./b7.jpg";
+import b8 from "./b8.jpg";
+import b9 from "./b9.jpg";
+import b10 from "./b10.jpg";
+import b11 from "./b11.jpg";
+import b12 from "./b12.jpg";
+import b13 from "./b13.jpg";
+import b14 from "./b14.jpg";
+import b15 from "./b15.jpg";
+import b16 from "./b16.jpg";
+import b17 from "./b17.png";
+import b18 from "./b18.jpg";
+import b19 from "./b19.jpg";
+import b20 from "./b20.jpg";
+import b21 from "./b21.jpg";
+import b22 from "./b22.jpg";
+import b23 from "./b23.jpg";
+import b24 from "./b24.jpg";
+import b25 from "./b25.jpg";
+import b26 from "./b26.jpg";
+import b27 from "./b27.jpg";
+import b28 from "./b28.jpg";
+import b29 from "./b29.jpg";
+import b30 from "./b30.jpg";
+import b31 from "./b31.jpg";
+import b32 from "./b32.jpg";
+import b33 from "./b33.jpg";
+import b34 from "./b34.jpg";
+
+
+import contactsideimg from "./contact-side-img.png";
+
+
+
 
 export {
   logo,
@@ -251,6 +302,15 @@ export {
   partner4,
   partner5,
 
+
+  bestselling1,
+  bestselling2,
+  bestselling3,
+  bestselling4,
+  bestselling5,
+  bestselling6,
+
+
   footerSingleLogo,
 
   portfolioImg1,
@@ -268,4 +328,49 @@ export {
   portfolioImg13,
   portfolioImg14,
   portfolioImg15,
+
+
+  b1,
+  b2,
+  b3,
+  b4,
+  b5,
+  b6,
+  b7,
+  b8,
+  b9,
+  b10,
+  b11,
+  b12,
+  b13,
+  b14,
+  b15,
+  b16,
+  b17,
+  b18,
+  b19,
+  b20,
+  b21,
+  b22,
+  b23,
+  b24,
+  b25,
+  b26,
+  b27,
+  b28,
+  b29,
+  b30,
+  b31,
+  b32,
+  b33,
+  b34,
+
+
+  contactsideimg,
+
+
+
 };
+
+
+

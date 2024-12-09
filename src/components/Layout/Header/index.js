@@ -15,6 +15,13 @@ import { logo } from "../../../asserts/images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
+import {partner1, partner2, partner3, partner4, partner5} from "../../../asserts/images";
+
+
+
+
+
+
 const Header = () => {
   return (
     <>
@@ -76,19 +83,16 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <a className="nav-link" href="#">Home</a>
+                      <Link className="nav-link" to={"/"}>Home</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">About</a>
+                      <Link className="nav-link" to={"/about-us"}>About</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">Featured</a>
+                      <Link className="nav-link" to={"/featured-author"}>Featured Authors</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">Authors</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Contact</a>
+                      <Link className="nav-link" to={"/contact-us"}>Contact</Link>
                     </li>
                   </ul>
                 </div>
@@ -114,57 +118,58 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="justify-content-end w-100">
-                    <Link href="#home" as={Link} to="/">
-                      <p className="navbar_para">Book <span class="header_light_bold">Publishing</span></p>
-                      <p className="navbar_para_bottom">Consultation</p>
+                    <Link to={"/ghost-writing"}>
+                      <p className="navbar_para">Ghost Book <span class="header_light_bold">Writing</span></p>
+                      {/* <p className="navbar_para_bottom">Consultation</p> */}
                     </Link>
 
                     <Link as={Link} to="/book-publishing">
                       <p className="navbar_para">
-                        Self{" "}
+                        Book{" "}
                         <span className="header_light_bold">Publishing</span>
                       </p>
-                      <p className="navbar_para_bottom">Publishing</p>
+                      {/* <p className="navbar_para_bottom">Publishing</p> */}
                     </Link>
 
-                    <Link to={"/ghost-writer"}>
+                    <Link to={"/ebook-writing"}>
                       <p className="navbar_para">
-                        Ghostwriting{" "}
-                        <span className="header_light_bold">Services</span>
+                        EBook{" "}
+                        <span className="header_light_bold">Writing</span>
                       </p>
-                      <p className="navbar_para_bottom">Writing</p>
+                      {/* <p className="navbar_para_bottom">Writing</p> */}
                     </Link>
 
-                    <Link to={"/audio-book-design"}>
+                    <Link to={"/article-writing-publication"}>
                       <p className="navbar_para">
-                        The Book{" "}
-                        <span className="header_light_bold">Designer</span>
+                      Article Writing &{" "}
+                        <span className="header_light_bold">Publication</span>
                       </p>
-                      <p className="navbar_para_bottom">Production</p>
-                    </Link>
-
-                    <Link to={"/book-editing"}>
-                      <p className="navbar_para">
-                        Book <span className="header_light_bold">Editor</span>
-                      </p>
-                      <p className="navbar_para_bottom">Proofreading</p>
+                      {/* <p className="navbar_para_bottom">Production</p> */}
                     </Link>
 
                     <Link to={"/book-marketing"}>
                       <p className="navbar_para">
-                        <span className="header_light_bold">Marketing</span>
+                      Book <span className="header_light_bold">Marketing</span>
                       </p>
-                      <p className="navbar_para_bottom">Branding</p>
+                      {/* <p className="navbar_para_bottom">Proofreading</p> */}
+                    </Link>
+
+                    <Link to={"/custom-book-illustration"}>
+                      <p className="navbar_para">
+                      Custom <span className="header_light_bold">Book Illustration</span>
+                      </p>
+                      {/* <p className="navbar_para_bottom">Branding</p> */}
                     </Link>
 
                     <DropdownButton id="dropdown-basic-button" className="navbar-more-btn" title="More">
                       {/* <Dropdown.Item href="#/action-1">Resume Writing</Dropdown.Item> */}
-                      <Dropdown.Item href="#/action-2">Author Website</Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">Book Marketing</Dropdown.Item>
-                      <Dropdown.Item href="#/action-4">Book Cover Design</Dropdown.Item>
-                      <Dropdown.Item href="#/action-5">Custom Book Illustration</Dropdown.Item>
-                      <Dropdown.Item href="#/action-6">Professional Audio Book</Dropdown.Item>
-                      {/* <Dropdown.Item href="#/action-7">Proofreading</Dropdown.Item> */}
+                      <Dropdown.Item><Link to={'/author-website'}>Author Website</Link></Dropdown.Item>
+                      <Dropdown.Item><Link to={'/book-video-trailer'}>Book Video Trailer</Link></Dropdown.Item>
+                      <Dropdown.Item><Link to={'/book-cover-design'}>Book Cover Design</Link></Dropdown.Item>
+                      <Dropdown.Item><Link to={'/copyrights-protection'}>Copyrights Protection</Link></Dropdown.Item>
+                      <Dropdown.Item><Link to={'/audio-book-design'}>Professional Audio Book</Link></Dropdown.Item>
+                      <Dropdown.Item><Link to={'/press-release'}>Press Release</Link></Dropdown.Item>
+                      <Dropdown.Item><Link to={'/proof-reading'}>Editing & Proofreading</Link></Dropdown.Item>
                     </DropdownButton>
 
 
@@ -175,8 +180,35 @@ const Header = () => {
           </div>
         </section>
       </header>
+
+
+      <div className="float-badge">
+        <div className="float-img">
+          <span>Reviews</span>
+          <img src={partner1} alt="" />
+          <img src={partner2} alt="" />
+          <img src={partner3} alt="" />
+          <img src={partner4} alt="" />
+          <img src={partner5} alt="" />
+        </div>
+      </div>
+      
+
+
+
+      <a href="tel:(855) 288-8770" class="whatsapp"><i class="fa fa-phone"></i></a>
+
+
+
     </>
   );
 };
+
+
+
+
+
+
+
 
 export default Header;

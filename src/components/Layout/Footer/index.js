@@ -1,5 +1,11 @@
 import React from "react";
 import {
+  bestselling1,
+  bestselling2,
+  bestselling3,
+  bestselling4,
+  bestselling5,
+  bestselling6,
   dmcaImg,
   facebookIcon,
   footerBrandImgs,
@@ -131,11 +137,10 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="footer_spacer"></div>
-                  <div className="col-sm-4">
+                  <div className="col-sm-3">
                     <div className="footer_quick_links">
                       <h3 className="footer_subhead">
-                        Ghostwriting <br />
-                        Services
+                        Ghostwriting
                       </h3>
 
                       <ul className="footer_links">
@@ -151,21 +156,21 @@ const Footer = () => {
                         <li className="footer_link">
                           <Link>fiction</Link>
                         </li>
-                        <li className="footer_link">
+                        {/* <li className="footer_link">
                           <Link>Western Writing</Link>
                         </li>
                         <li className="footer_link">
                           <Link>Romantic Writing</Link>
-                        </li>
+                        </li> */}
                         <li className="footer_link">
                           <Link>Action Adventure</Link>
                         </li>
-                        <li className="footer_link">
+                        {/* <li className="footer_link">
                           <Link to="faithfaith-writer">Christian- Faith</Link>
                         </li>
                         <li className="footer_link">
                           <Link>Drama Writing</Link>
-                        </li>
+                        </li> */}
                         <li className="footer_link">
                           <Link>eBook Writing</Link>
                         </li>
@@ -191,23 +196,32 @@ const Footer = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-sm-4">
+                  <div className="col-sm-3">
                     <div className="footer_quick_links">
                       <h3 className="footer_subhead">
-                        Publishing & <br /> Editing
+                        Books Editing
                       </h3>
 
                       <ul className="footer_links">
                         <li className="footer_link">
-                          <Link to="/">PR Publication</Link>
+                          <Link to={'javascript:;'}>Book Formatting</Link>
                         </li>
                         <li className="footer_link">
-                          <Link to="/">Book Publishing</Link>
+                          <Link to={'javascript:;'}>Children's Book Editors</Link>
                         </li>
                         <li className="footer_link">
-                          <Link to="/">Printing Books</Link>
+                          <Link to={'javascript:;'}>Book Proofreading</Link>
                         </li>
                         <li className="footer_link">
+                          <Link to={'javascript:;'}>developmental Editing</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to={'javascript:;'}>Line Editing</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to={'javascript:;'}>Sensitive Reading</Link>
+                        </li>
+                        {/* <li className="footer_link">
                           <Link to="/">Self-Help Publishing Amazon</Link>
                         </li>
                         <li className="footer_link">
@@ -226,7 +240,7 @@ const Footer = () => {
                         </li>
                         <li className="footer_link">
                           <Link to="/">Proofreading Editing</Link>
-                        </li>
+                        </li> */}
                       </ul>
 
                       {/* <ul className="footer_links">
@@ -238,24 +252,23 @@ const Footer = () => {
                         </ul> */}
                     </div>
                   </div>
-                  <div className="col-sm-4">
+                  <div className="col-sm-3">
                     <div className="footer_quick_links">
                       <h3 className="footer_subhead">
-                        Book Marketing and
-                        <br /> Production
+                        Illustrations
                       </h3>
 
                       <ul className="footer_links">
                         <li className="footer_link">
-                          <Link to="/cover-design">Book Cover Design</Link>
+                          <Link to={'javascript:;'}>Book Illustration Services</Link>
                         </li>
                         <li className="footer_link">
-                          <Link to="/audio-book-design">Audio Book</Link>
+                          <Link to={'javascript:;'}>Comic Book Illustration</Link>
                         </li>
                         <li className="footer_link">
-                          <Link to="/illustration">Illustrations</Link>
+                          <Link to={'javascript:;'}>Children's Book Illustration</Link>
                         </li>
-                        <li className="footer_link">
+                        {/* <li className="footer_link">
                           <Link to="/">Author Logo Design</Link>
                         </li>
                         <li className="footer_link">
@@ -271,7 +284,7 @@ const Footer = () => {
                         </li>
                         <li className="footer_link">
                           <Link to="/">EBook SEO</Link>
-                        </li>
+                        </li> */}
                       </ul>
 
                       {/* <ul className="footer_links">
@@ -283,6 +296,42 @@ const Footer = () => {
                             ))
                         }
                       </ul> */}
+                    </div>
+                  </div>
+                  <div className="col-sm-3">
+                    <div className="footer_quick_links">
+                      <h3 className="footer_subhead">
+                        Other Services
+                      </h3>
+
+                      <ul className="footer_links">
+                        <li className="footer_link">
+                          <Link to="/cover-design">Book Cover Design</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/audio-book-design">Audio Book</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/book-video-trailer">Book Trailer</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to={'javascript:;'}>Author Logo Design</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/author-website">
+                          Author Website Design
+                          </Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/book-publishing">Book Publishing</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/book-marketing">Book Marketing</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to={'javascript:;'}>Children's Book Printing</Link>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -311,13 +360,13 @@ const Footer = () => {
                 <div className="footer_extra_links">
                   <ul className="footer_links">
                     <li className="footer_link">
-                      <Link>About</Link>
+                      <Link to={'/about-us'}>About</Link>
                     </li>
                     <li className="footer_link">
-                      <Link>Review</Link>
+                      <Link to={'/featured-author'}>Featured Author</Link>
                     </li>
                     <li className="footer_link">
-                      <Link>Contact us</Link>
+                      <Link to={'/contact-us'}>Contact us</Link>
                     </li>
                   </ul>
                 </div>
@@ -325,7 +374,12 @@ const Footer = () => {
               <div className="footer_spacer"></div>
               <div className="col-md-12">
                 <div className="footer_brand_imgs">
-                  <img src={footerBrandImgs} className="img-fluid" alt="" />
+                  <img src={bestselling1} className="img-fluid" alt="" />
+                  <img src={bestselling2} className="img-fluid" alt="" />
+                  <img src={bestselling3} className="img-fluid" alt="" />
+                  <img src={bestselling4} className="img-fluid" alt="" />
+                  <img src={bestselling5} className="img-fluid" alt="" />
+                  <img src={bestselling6} className="img-fluid" alt="" />
                 </div>
               </div>
             </div>

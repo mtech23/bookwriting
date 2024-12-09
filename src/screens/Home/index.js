@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Accordion from "react-bootstrap/Accordion";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import {
   heroImgLeft,
   heroImgRight,
@@ -83,6 +83,7 @@ const tabs = [
   {
     id: "book-publishing",
     title: "Book Publishing",
+    link:"/book-publishing",
     icon: helpingIcon01,
     content:
       "At Falcon Book Writing, we make publishing easy and hassle-free. From formatting to cover design and distribution, we guide you through the whole process. Moreover, our experts ensure your book meets industry standards and gets the attention it deserves on major platforms, turning your vision into a professionally published masterpiece.",
@@ -91,6 +92,7 @@ const tabs = [
   {
     id: "ghost-writing",
     title: "Ghost Writing",
+    link:"/ghost-writing",
     icon: helpingIcon02,
     content:
       "Falcon Book Writing offers professional ghostwriting through our book writers for hire for those who have ideas but no time to write. Share your story or concept, and our talented writers will bring it to life with creativity and precision. You retain full credit while we do the hard work, making your dream book a reality.",
@@ -99,6 +101,7 @@ const tabs = [
   {
     id: "book-editing",
     title: "Book Editing",
+    link:"/proof-reading",
     icon: helpingIcon03,
     content:
       "Let Falcon Book Writing polish your manuscript to perfection. Our skilled editors refine grammar, structure, and flow while preserving your unique voice. Whether it's a novel or a non-fiction piece, we enhance readability and professionalism, ensuring your book captivates readers and stands out in a competitive market.",
@@ -107,6 +110,7 @@ const tabs = [
   {
     id: "ebook-writing",
     title: "eBook Writing",
+    link:"/ebook-writing",
     icon: helpingIcon04,
     content:
       "Falcon Book Writing specializes in providing book writing services. Whether it is storytelling, self-help, or business, our book writers for hire create engaging content that suits your audience. Therefore, we ensure your eBook is formatted correctly and visually appealing, ready for digital platforms, helping you connect with readers worldwide effortlessly.",
@@ -115,6 +119,7 @@ const tabs = [
   {
     id: "lorem-ipsum",
     title: "Book Marketing",
+    link:"/book-marketing",
     icon: helpingIcon05,
     content:
       "At Falcon Book Writing, we get your book in the hands of its audience through marketing strategies. From social media campaigns to Amazon optimization, we make your book come to life by increasing visibility and sales. Therefore, our approach ensures that your story is brought into the limelight as your book becomes a success story.",
@@ -126,7 +131,7 @@ const Home = () => {
   // const [activeTab, setActiveTab] = useState({});
   const [activeTab, setActiveTab] = useState(tabs[2]);
 
-  const [toggle, setToggle] = useState(false);
+ const navigate = useNavigate()
 
   console.log("activetabs", activeTab);
 
@@ -293,7 +298,7 @@ const Home = () => {
                     >
                       In addition, at falcon book writing, our book writers for hire feels pride themselves on delivering excellent quality and personalized service, making your journey to becoming a published author smooth and rewarding.
                     </p>
-                    <button
+                    {/* <button
                       type="submit"
                       class="brand_btn"
                       data-aos="fade-right"
@@ -301,7 +306,13 @@ const Home = () => {
                       data-aos-duration="2000"
                     >
                       Read More
+                    </button> */}
+                    <div class="inner-btn-group">
+                    <button className="btn-bg-white blink">
+                      <Link to={'/contact-us'}>Get Started</Link>
                     </button>
+                    <button className="btn-bg-red"><a href="tel:(855) 288-8770">Call Us Now</a></button>
+                  </div>
                   </div>
                 </div>
 
@@ -373,7 +384,7 @@ const Home = () => {
           </section>
 
 
-          <div className="container-fluid p-0">
+          {/* <div className="container-fluid p-0">
             <div>
               <div class="marquee-container trusted-partnerContainer">
                 <div class="marquee">
@@ -442,7 +453,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-    </div>
+    </div> */}
 
           
         </section>
@@ -477,7 +488,7 @@ const Home = () => {
                             alt="helpingIcon"
                             className="duolingo_tab_img"
                           ></img>
-                          <h6 className="duolingo_tab_title">{item.title}</h6>
+                          <h6 className="duolingo_tab_title" onClick={()=>navigate(item.link)}>{item.title}</h6>
                         </div>
                       );
                     })}
@@ -664,7 +675,7 @@ const Home = () => {
                     >
                       {activeTab.content}
                     </p>
-                    <button
+                    {/* <button
                       type="submit"
                       class="brand_btn"
                       data-aos="fade-up"
@@ -672,7 +683,13 @@ const Home = () => {
                       data-aos-duration="3000"
                     >
                       Get Started
+                    </button> */}
+                    <div class="inner-btn-group">
+                    <button className="btn-bg-white blink">
+                      <Link to={'/contact-us'}>Get Started</Link>
                     </button>
+                    <button className="btn-bg-red"><a href="tel:(855) 288-8770">Call Us Now</a></button>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -884,6 +901,56 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
+            <div class="row process_rows">
+              <div class="col-lg-5 col-sm-12 mx-auto">
+                <div
+                  class="process_content"
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
+                  <h4 class="process_step">Step 5</h4>
+                  <h3 class="process_content_title">Writing & Editing</h3>
+                  <p>
+                  With the outline set, our team starts to write the content. We ensure that the text is clear, engaging, and informative for your audience. We then enter the editing process, where we review and refine the content. We improve readability, correct grammatical and spelling errors, and ensure that your voice and message are delivered. We also ensure that the content is consistent and professional.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 mx-auto">
+                <div
+                  class="process_img"
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-duration="2000"
+                >
+                  <img
+                    draggable={false}
+                    src={processImg03}
+                    class="img-fluid"
+                    alt="Crafting the Details"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mx-auto">
+                <div
+                  class="process_counter"
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-duration="3000"
+                >
+                  <h1>05</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="inner-btn-group">
+                  <button className="btn-bg-white blink">
+                    <Link to={'/contact-us'}>Get Started</Link>
+                  </button>
+                  <button className="btn-bg-red"><a href="tel:(855) 288-8770">Call Us Now</a></button>
+                </div>
+
           </div>
         </section>
 
@@ -939,81 +1006,7 @@ const Home = () => {
 
 
 
-        <div className={`floatbutton ${toggle ? 'active' : ''}`}>
-          <div className="btns_wrap">
-
-            <a href="javascript:;" className="chat_wrap" onclick="$zopim.livechat.window.toggle()">
-              <span className="icoo"><i className="fa fa-comment"></i></span>
-              <span>Chat With Us</span>
-            </a>
-            <a href="tel:(855) 288-8770" className="call_wrap">
-              <span className="icoo"><i className="fa fa-phone"></i></span>
-              <span> (855) 288-8770</span>
-            </a>
-          </div>
-
-
-
-          <div className={`clickbutton ${toggle ? 'active' : ''}`} onClick={() => { setToggle(!toggle) }}>
-            <div className="crossplus">50% Off On All Services</div>
-          </div>
-          <div className="banner-form">
-            <h3>Chat With Us to <br />Avail 50% Discount</h3>
-            <div className="banform">
-              <div className="container">
-                <div className="row">
-                  <div className="ban-form">
-                    <form className="cmxform" id="ordernow-form" action="https://www.falconbookwriting.com/webpages/FormController.php" method="post">
-                      <div className="alert alert-danger error" style={{ display: "none" }}></div>
-                      <div className="row">
-                        <div className="col-lg-12">
-                          <div className="fldset">
-                            <input type="text" name="Name" placeholder="Name" className="required" onkeyup="validateName(this)" onkeydown="return alphaOnly(event)" required="" />
-
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          <div className="fldset">
-                            <input type="Email" name="Email" placeholder=" Email" onkeyup="emailValidation(this)" onkeypress="emailValidation(this)" className="required" required="" />
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          <div className="fldset">
-
-
-                            <input type="text" id="phone-coun" name="Number" placeholder="Phone number" pattern="^\d{5,}$" minlength="9" required />
-                            <span className="bg-danger col-lg-offset-3 contact_error " style={{ display: "none" }}>Contact No Incorrect</span>
-
-                            <input type="hidden" className="form-control" placeholder="Url" id="url" name="url" value="" required />
-                            <input type="tel" name="brand_id" id="brand_id" value="15" hidden />
-                            <input type="tel" name="package_id" id="package_id" value="1" hidden />
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          <div className="fldset">
-                            <textarea name="Message" rows="7" placeholder="Talk About Your Project" id="textInput" minlength="25" required></textarea>
-                          </div>
-                        </div>
-
-                        <div className="col-lg-12">
-                          <div className="fldset">
-                            <input name="submit" type="submit" placeholder="Connect With Us" required />
-                            <input className="" type="hidden" name="ctry" value="" />
-                            <input type="hidden" name="pc" value="" />
-                            <input type="hidden" name="cip" value="" className="form-1-ip" />
-                            <input type="hidden" name="hiddencapcha" value="" />
-                            <input type="hidden" id="location" name="locationURL" value="https://www.falconbookwriting.com/" />
-
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      
 
       </UserLayout>
     </>

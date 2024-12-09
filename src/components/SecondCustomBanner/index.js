@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { banner2imgRight, secondBannerImg01 } from '../../asserts/images'
+import { Link } from 'react-router-dom'
 
 const SecondCustomBanner = () => {
   return (
@@ -21,11 +22,12 @@ const SecondCustomBanner = () => {
                 data-aos-duration="2000">
                   Got questions? We're here to help! At Falcon Book Writing, we're committed to making your book-writing journey easy and smooth. Reach out to us today, and start with our book writing service. Contact us now!
                 </p>
-                <button type="button" className="brand_btn" data-aos="fade-up"
+                <button type="button" className="brand_btn blink" data-aos="fade-up"
                 data-aos-offset="0"
                 data-aos-duration="3000">
-                  Get Started
+                  <Link to={'/contact-us'}>Get Started</Link>
                 </button>
+                <button className="btn-bg-red" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000"><a href="tel:(855) 288-8770">Call Us Now</a></button>
               </div>
             </div>
           </div>

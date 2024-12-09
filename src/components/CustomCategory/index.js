@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import {
   A4book,
   A4book1,
@@ -359,6 +360,12 @@ const CustomCategory = (props) => {
               </div>
             </div>
           </div>
+          <div class="inner-btn-group">
+                  <button className="btn-bg-white blink">
+                    <Link to={'/contact-us'}>Get Started</Link>
+                  </button>
+                  <button className="btn-bg-red"><a href="tel:(855) 288-8770">Call Us Now</a></button>
+            </div>
         </div>
       </section>
     </>
